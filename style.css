@@ -196,7 +196,7 @@ textarea {
 
 .sobre {
   color: white;
-  background: #9f4c2b4a;
+  background: #02131d9d;
   border-radius: 10px;
   padding: 20px;
   max-width: 800px;
@@ -279,7 +279,6 @@ textarea {
   margin-left: auto;
 }
 
-
 .accordion.active .accordion-header i {
   transform: translateY(-50%) rotate(180deg);
 }
@@ -304,7 +303,7 @@ textarea {
 .accordion-content p {
   color: white;
   font-size: 1.2rem;
-   font-style: oblique;
+  font-style: oblique;
 }
 
 .redes-sociais {
@@ -337,7 +336,6 @@ textarea {
   .sobre {
     margin-top: 10rem;
     color: white;
-    background: #9f4c2b4a;
     padding: 20px;
     border-radius: 15px;
   }
@@ -398,10 +396,8 @@ textarea {
   }
   .title {
     color: #f27241;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
     font-size: 20px;
-    padding: 10px;
     margin-top: 1rem;
     font-family: "Anton", sans-serif;
     font-weight: 400;
