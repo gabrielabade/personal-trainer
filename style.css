@@ -10,7 +10,7 @@
 
 button {
   color: white;
-  background-color: #f27241;
+  background-color: #ff9046;
   border-radius: 3px;
   border: none;
   width: 12.5rem;
@@ -22,7 +22,7 @@ button {
 }
 
 button:hover {
-  background: #f27241;
+  background: #ff9046;
   transition: background 2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 .caixa-principal h2 {
-  color: #f27241;
+  color: #ff9046;
 }
 
 .menu-icon {
@@ -101,7 +101,7 @@ video {
 }
 
 .link-whatsapp i:hover {
-  color: #f27241;
+  color: #ff9046;
 }
 
 .header {
@@ -125,7 +125,7 @@ video {
 }
 
 .header a:hover {
-  color: #f27241;
+  color: #ff9046;
   font-size: 1.8rem;
   transition: color 1s ease-in-out, font-size 1s ease-in-out;
 }
@@ -156,7 +156,7 @@ input {
   border-radius: 0.5rem;
   border: 1px solid gray;
   padding-left: 0.3rem;
-  outline-color: #f27241;
+  outline-color: #ff9046;
 }
 
 textarea {
@@ -165,7 +165,7 @@ textarea {
   border-radius: 0.5rem;
   border: 1px solid gray;
   padding-left: 0.3rem;
-  outline-color: #f27241;
+  outline-color: #ff9046;
 }
 
 .mascara-formulario {
@@ -196,7 +196,7 @@ textarea {
 
 .sobre {
   color: white;
-  background: #02131d9d;
+  background: 02131d9d;
   border-radius: 10px;
   padding: 20px;
   max-width: 800px;
@@ -216,7 +216,7 @@ textarea {
   font-style: oblique;
 }
 .sobre span {
-  color: #f27241;
+  color: #ff9046;
 }
 .passos h1 {
   font-size: 30px;
@@ -227,7 +227,7 @@ textarea {
   text-align: start;
 }
 .passos span {
-  color: #f27241;
+  color: #ff9046;
 }
 .passos p {
   font-size: 1rem;
@@ -242,7 +242,7 @@ textarea {
 }
 
 .accordion {
-  background-color: #02131d9d;
+  background-color: 02131d9d;
   border-radius: 10px;
   cursor: pointer;
   padding: 18px;
@@ -320,7 +320,7 @@ textarea {
 }
 
 .redes-sociais a:hover {
-  color: #f27241;
+  color: #ff9046;
   transition: 1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
@@ -358,7 +358,7 @@ textarea {
     text-align: start;
   }
   .passos span {
-    color: #f27241;
+    color: #ff9046;
   }
   .passos p {
     font-size: 1rem;
@@ -369,7 +369,7 @@ textarea {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #02131d9d;
+    background-color: 02131d9d;
     display: flex;
     justify-content: space-around;
     padding: 1px 0;
@@ -381,7 +381,7 @@ textarea {
     color: white;
   }
   .redes-sociais a:hover {
-    color: #f27241;
+    color: #ff9046;
     transition: color 0.3s ease;
   }
 
@@ -395,7 +395,7 @@ textarea {
     padding: 0 20px;
   }
   .title {
-    color: #f27241;
+    color: #ff9046;
     margin-left: 1rem;
     font-size: 20px;
     margin-top: 1rem;
@@ -420,7 +420,7 @@ textarea {
     display: block;
     position: absolute;
     width: 100%;
-    background-color: #02131d9d;
+    background-color: 02131d9d;
     padding: 1rem;
     top: 0;
   }
@@ -498,7 +498,7 @@ textarea {
     top: 7rem;
     left: 2rem;
     right: 2rem;
-    background-color: #f27241;
+    background-color: #ff9046;
     padding: 10px;
     border-radius: 5px;
     z-index: 1;
