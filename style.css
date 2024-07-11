@@ -242,7 +242,7 @@ textarea {
 }
 
 .accordion {
-  background-color: 02131d9d;
+  background-color: #02131d9d;
   border-radius: 10px;
   cursor: pointer;
   padding: 18px;
@@ -369,7 +369,7 @@ textarea {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: 02131d9d;
+    background-color: #02131d9d;
     display: flex;
     justify-content: space-around;
     padding: 1px 0;
@@ -420,7 +420,7 @@ textarea {
     display: block;
     position: absolute;
     width: 100%;
-    background-color: 02131d9d;
+    background-color: #02131d9d;
     padding: 1rem;
     top: 0;
   }
