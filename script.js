@@ -26,7 +26,7 @@ form.addEventListener("submit", function (event) {
   const nome = document.getElementById("nome").value;
   const duvida = document.getElementById("duvida").value;
 
-  const mensagem = `Olá Paulo, venho através do seu site. Meu nome é ${nome}. Minha meta é: ${duvida}.`;
+  const mensagem = `Olá Personal, venho através do seu site. Meu nome é ${nome}. Minha meta é: ${duvida}.`;
   const mensagemCodificada = encodeURIComponent(mensagem);
   const whatsappLink = `https://wa.me/5548991056014?text=${mensagemCodificada}`;
 

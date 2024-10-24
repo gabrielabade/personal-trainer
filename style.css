@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.logo-header {
+.logo-desktop {
   height: 12.5rem;
 }
 
@@ -30,21 +30,21 @@ body {
   height: 100vh;
 }
 
-.caixa-mae {
+
+
+.caixa-principal {
   display: flex;
+  flex-direction: column;
   align-items: safe;
-  justify-content: baseline;
+  justify-content: safe;
+  color: white;
+  margin-top: 17rem;
   height: 100vh;
   color: white;
   margin-top: 12rem;
-  padding: 15rem 3%;
-  max-width: 1600px;
+  padding: 15rem 5%;
   margin: 1rem auto;
-}
-
-.caixa-principal {
-  width: 50%;
-  font-size: 2rem;
+  font-size: 25px;
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -81,12 +81,10 @@ video {
 .mascara {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(
-    -100deg,
-    rgba(10, 12, 16, 0.162) 15%,
-    rgba(57, 44, 3, 0.548) 50%,
-    rgba(10, 12, 16, 0.959) 85%
-  );
+  background: linear-gradient(-100deg,
+      rgba(10, 12, 16, 0.162) 15%,
+      rgba(57, 44, 3, 0.548) 50%,
+      rgba(10, 12, 16, 0.959) 85%);
   position: fixed;
   top: 0;
 }
@@ -104,7 +102,7 @@ video {
   color: #ff9046;
 }
 
-.header {
+header {
   display: flex;
   justify-content: baseline;
   align-items: baseline;
@@ -112,11 +110,15 @@ video {
   margin: 4rem;
 }
 
-.header img {
+header img {
   height: 3.75rem;
 }
 
-.header a {
+.logo-desktop-container img {
+  height: 3.75rem;
+}
+
+header a {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
@@ -124,17 +126,21 @@ video {
   margin-left: 2rem;
 }
 
-.header a:hover {
+header a:hover {
   color: #ff9046;
   font-size: 1.8rem;
   transition: color 1s ease-in-out, font-size 1s ease-in-out;
 }
 
 .logo-mobile {
-  display: none; /* Esconde a imagem por padrão */
-  width: 50px; /* Ajuste o tamanho conforme necessário */
-  height: auto; /* Mantém a proporção da imagem */
-  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  display: none;
+  /* Esconde a imagem por padrão */
+  width: 50px;
+  /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  /* Mantém a proporção da imagem */
+  margin: 0 auto;
+  /* Centraliza a imagem horizontalmente */
 }
 
 .formulario-fale-conosco {
@@ -176,12 +182,10 @@ textarea {
   height: 100vh;
   top: 0;
   left: 0;
-  background: linear-gradient(
-    109deg,
-    rgba(10, 12, 16, 0.99) 15%,
-    rgba(10, 12, 16, 0.7) 50%,
-    rgba(10, 12, 16, 0.99) 85%
-  );
+  background: linear-gradient(109deg,
+      rgba(10, 12, 16, 0.99) 15%,
+      rgba(10, 12, 16, 0.7) 50%,
+      rgba(10, 12, 16, 0.99) 85%);
   transition: visibility 1s ease-in-out;
 }
 
@@ -192,6 +196,7 @@ textarea {
 .video-mobile {
   display: none;
 }
+
 /* SOBRE.HTML*/
 
 .sobre {
@@ -205,16 +210,19 @@ textarea {
   max-width: 800px;
   margin-top: 1vh;
 }
+
 .sobre h1 {
   font-size: 30px;
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
 .sobre p {
   font-size: 1.3rem;
   font-style: oblique;
 }
+
 .sobre span {
   color: #ff9046;
 }
@@ -228,12 +236,15 @@ textarea {
   color: white;
   text-align: start;
 }
+
 .passos span {
   color: #ff9046;
 }
+
 .passos p {
   font-size: 1rem;
 }
+
 .accordion-container {
   padding: 20px;
   max-width: 800px;
@@ -271,6 +282,7 @@ textarea {
   font-style: normal;
   color: white;
 }
+
 .accordion-header i {
   position: absolute;
   right: 10px;
@@ -319,19 +331,23 @@ textarea {
   max-width: 800px;
   margin-top: 1vh;
 }
+
 .acesso h1 {
   font-size: 30px;
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
 .acesso p {
   font-size: 1.3rem;
   font-style: oblique;
 }
+
 .acesso span {
   color: #ff9046;
 }
+
 .redes-sociais {
   display: flex;
   justify-content: center;
@@ -365,16 +381,19 @@ textarea {
     padding: 20px;
     border-radius: 15px;
   }
+
   .sobre h1 {
     font-size: 20px;
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
+
   .sobre p {
     font-size: 16px;
     font-style: oblique;
   }
+
   .passos h1 {
     font-size: 20px;
     font-family: "Anton", sans-serif;
@@ -383,15 +402,19 @@ textarea {
     color: white;
     text-align: start;
   }
+
   .passos span {
     color: #ff9046;
   }
+
   .passos p {
     font-size: 1rem;
   }
-.acesso {
-  margin-bottom: 30px;
-}
+
+  .acesso {
+    margin-bottom: 30px;
+  }
+
   .redes-sociais {
     position: fixed;
     left: 0;
@@ -403,11 +426,13 @@ textarea {
     padding: 1px 0;
     z-index: 1000;
   }
+
   .redes-sociais a {
     padding: 7px 7px;
     font-size: 30px;
     color: white;
   }
+
   .redes-sociais a:hover {
     color: #ff9046;
     transition: color 0.3s ease;
@@ -422,6 +447,7 @@ textarea {
   .container {
     padding: 0 20px;
   }
+
   .title {
     color: #ff9046;
     margin-left: 1rem;
@@ -431,6 +457,7 @@ textarea {
     font-weight: 400;
     font-style: normal;
   }
+
   .accordion-container {
     padding: 20px;
     max-width: 800px;
@@ -439,6 +466,7 @@ textarea {
     max-width: 800px;
     margin-top: 2vh;
   }
+
   body {
     width: 100%;
     height: 100%;
@@ -463,17 +491,6 @@ textarea {
     z-index: 1000;
   }
 
-  .caixa-mae {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    color: white;
-    margin-top: 17rem;
-  }
-
   .caixa-principal {
     width: 100%;
     font-size: 1rem;
@@ -485,7 +502,7 @@ textarea {
     margin-top: 3rem;
   }
 
-  .header {
+  header {
     margin: 10px;
     display: flex;
     align-items: center;
@@ -517,6 +534,7 @@ textarea {
     object-fit: cover;
     z-index: -1;
   }
+
   .nav-links {
     display: none;
     gap: 5px;
@@ -527,6 +545,8 @@ textarea {
     left: 2rem;
     right: 2rem;
     background-color: #ff9046;
+    color: white;
+    text-decoration: none;
     padding: 10px;
     border-radius: 5px;
     z-index: 1;
@@ -536,7 +556,7 @@ textarea {
     display: flex;
   }
 
-  .header a {
+  header a {
     font-size: 20px;
   }
 
@@ -549,11 +569,9 @@ textarea {
   }
 
   .mascara {
-    background: linear-gradient(
-      109deg,
-      rgba(10, 12, 16, 0.162) 15%,
-      rgba(28, 42, 72, 0.615) 50%,
-      rgba(10, 12, 16, 0.99) 85%
-    );
+    background: linear-gradient(109deg,
+        rgba(10, 12, 16, 0.162) 15%,
+        rgba(28, 42, 72, 0.615) 50%,
+        rgba(10, 12, 16, 0.99) 85%);
   }
 }

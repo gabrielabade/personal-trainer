@@ -4,29 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+ 
+  <link rel=" preload" href="style.css" as="style">
+  <link rel="preload" href="script.js" as="script">
+  <link rel="stylesheet" href="style.css">
+ 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
   <title>Personal Trainer</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/logo-header.png">
 </head>
 
 <body>
   <div class="mascara-formulario" onclick="hideForm()"></div>
-  <div class="logo-mobile-container">
-    <img src="./assets/logo-mobile.png" alt="logo-mobile" class="logo-mobile">
-  </div>
-
-  <div class="header">
-    <img src="./assets/logo-header.png" alt="logo" class="logo-desktop">
-    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="sobre.html">Sobre</a>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo-mobile-container">
+      <img src="./assets/logo-mobile.png" alt="Logo do Personal Trainer no formato mobile" class="logo-mobile">
     </div>
-  </div>
+  
+    <div class="logo-desktop-container">
+      <img src="./assets/logo-desktop.png" alt="Logo do Personal Trainer no formato desktop" class="logo-desktop">
+    </div>
+  
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <nav class="nav-links">
+      <a href="./index.html" aria-label="Ir para a página inicial">Home</a>
+      <a href="./sobre.html" aria-label="Ir para página de informações da consultoria">Sobre</a>
+    </nav>
+  </header>
+
   <div class="sobre">
     <h1>COMO EU <span>FAÇO</span></h1>
     <p>Na minha consultoria online, adoto uma abordagem detalhada e personalizada para cada aluno, valorizando uma
