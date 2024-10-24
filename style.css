@@ -218,6 +218,8 @@ textarea {
 .sobre span {
   color: #ff9046;
 }
+
+
 .passos h1 {
   font-size: 30px;
   font-family: "Anton", sans-serif;
@@ -306,6 +308,30 @@ textarea {
   font-style: oblique;
 }
 
+.acesso {
+  color: white;
+  background: 02131d9d;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 1vh;
+}
+.acesso h1 {
+  font-size: 30px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.acesso p {
+  font-size: 1.3rem;
+  font-style: oblique;
+}
+.acesso span {
+  color: #ff9046;
+}
 .redes-sociais {
   display: flex;
   justify-content: center;
@@ -363,7 +389,9 @@ textarea {
   .passos p {
     font-size: 1rem;
   }
-
+.acesso {
+  margin-bottom: 30px;
+}
   .redes-sociais {
     position: fixed;
     left: 0;
