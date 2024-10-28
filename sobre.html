@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
-  <link rel=" preload" href="style.css" as="style">
+  <link rel="preload" href="style.css" as="style">
   <link rel="preload" href="script.js" as="script">
   <link rel="stylesheet" href="style.css">
 
@@ -30,116 +30,148 @@
       <img src="./assets/logo-desktop.png" alt="Logo do Personal Trainer no formato desktop" class="logo-desktop">
     </a>
 
+    <div class="caixa-video">
+      <video autoplay muted loop class="video-desktop" type="video/mp4">
+        <source src="./assets/video.mp4" type="video/mp4">
+      </video>
+      <video autoplay muted loop class="video-mobile" type="video/mp4">
+        <source src="./assets/video-mobile.mp4" type="video/mp4">
+      </video>
+      <div class="mascara"></div>
+    </div>
 
+    <!-- Contact Form -->
+    <section>
+      <form id="formularioFaleConosco" class="formulario-fale-conosco">
+        <input id="nome" placeholder="Seu nome" type="text" name="nome" required>
+        <input id="telefone" placeholder="Seu telefone" type="tel" name="telefone" required>
+        <textarea id="duvida" placeholder="Escreva o que você precisa para orçamento aqui" name="duvida"
+          required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <!-- WhatsApp Contact -->
+    <a id="whatsappLink" href="https://wa.me/5551998393149?text=Olá+Personal+,+venho+através+do+seu+site+!"
+      class="link-whatsapp hidden" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Navigation -->
     <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <nav class="nav-links">
+    <nav class="nav-links" role="navigation" aria-label="Navegação principal">
       <a href="./index.html" aria-label="Ir para a página inicial">Home</a>
       <a href="./sobre.html" aria-label="Ir para página de informações da consultoria">Sobre</a>
     </nav>
   </header>
 
-  <div class="sobre">
-    <h1>COMO EU <span>FAÇO</span></h1>
-    <p>Na minha consultoria online, adoto uma abordagem detalhada e personalizada para cada aluno, valorizando uma
-      conexão
-      próxima e eficaz. Coletamos informações essenciais sobre sua saúde, rotina diária, interesses, desafios, metas e
-      frustrações, para oferecer um atendimento completo e eficiente. Também levamos em conta a ergonomia e o bem-estar
-      mental, buscando compreender completamente seu relacionamento com a atividade física para proporcionar um programa
-      equilibrado e saudável. Com base nesses insights, desenvolvemos estratégias personalizadas para garantir o máximo
-      progresso e resultados ideais para cada aluno. Veja abaixo o passo a passo do nosso atendimento online.</p>
-  </div>
+  <main>
+    <section class="sobre">
+      <h1>COMO EU <span>FAÇO</span></h1>
+      <p>Na minha consultoria online, adoto uma abordagem detalhada e personalizada para cada aluno, valorizando uma
+        conexão
+        próxima e eficaz. Coletamos informações essenciais sobre sua saúde, rotina diária, interesses, desafios, metas e
+        frustrações, para oferecer um atendimento completo e eficiente. Também levamos em conta a ergonomia e o
+        bem-estar
+        mental, buscando compreender completamente seu relacionamento com a atividade física para proporcionar um
+        programa
+        equilibrado e saudável. Com base nesses insights, desenvolvemos estratégias personalizadas para garantir o
+        máximo
+        progresso e resultados ideais para cada aluno. Veja abaixo o passo a passo do nosso atendimento online.</p>
+    </section>
 
-  <div class="accordion-container passos">
-    <h1 class="title">PASSO A PASSO <span>DA CONSULTORIA</span></h1>
-    <div class="accordion">
-      <h2 class="accordion-header"><span>01.</span> Anamnese<i class="fas fa-chevron-down"></i></h2>
-      <div class="accordion-content">
-        <p>É um questionario de saúde onde é realizado coleta de informações sobre seu histórico de saúde, ergonomia,
-          experiência com exercício físicos, como é sua alimentação, profissão, rotina e objetivos. O mais detalhista
-          possível ajuda na hora do atendimento em videochamada</p>
-      </div>
-    </div>
-    <div class="accordion">
-      <h2 class="accordion-header"><span>02.</span> Avaliação Postural<i class="fas fa-chevron-down"></i></h2>
-      <div class="accordion-content">
-        <p>Eu vou te mandar exemplos de como se posicionar corretamente para captura das fotos, para que assim eu possa
-          fazer a avaliação corretamente sem equívocos. É de suma importância o envio das fotos, pois atrvés delas irei
-          montar o protocolo de treino personalizado, exclusivo para você.</p>
-      </div>
-    </div>
-    <div class="accordion">
-      <h2 class="accordion-header"><span>03.</span> Fotos da Academia<i class="fas fa-chevron-down"></i></h2>
-      <div class="accordion-content">
-        <p>Eu irei pedir que você grave ou tire fotos da sua academia e equipamentos para que eu possa avaliar e
-          selecionar os melhores equipamentos para o seu programa de treinamento personalizado. Ao receber suas imagens
-          vou desenvolver tudo de acordo com os equipamentos que tem na sua academia atual</p>
-      </div>
-    </div>
-    <div class="accordion">
-      <h2 class="accordion-header"><span>04.</span>Vídeo Chamada<i class="fas fa-chevron-down"></i></h2>
-      <div class="accordion-content">
-        <p>Após o envio dos arquivos (etapa 1, 2 e 3), agendaremos uma videochamada para uma consulta personalizada.
-          Durante nossa conversa, irei aprofundar nossa anamnese e discutir as informações fornecidas, incluindo as
-          fotos ou vídeos da sua academia. Isso me permitirá entender melhor suas necessidades e objetivos específicos.
-        </p>
-      </div>
-    </div>
-    <div class="accordion">
-      <h2 class="accordion-header"><span>05.</span>Execução dos Exercícios<i class="fas fa-chevron-down"></i></h2>
-      <div class="accordion-content">
-        <p>Após você receber o protocolo de treinamento personalizado, solicito que envie vídeos executando cada
-          exercício, para que eu possa fazer as correções, mesmo sendo online prezo na execução dos exercícios com uma
-          boa técnica, e garantir que cada um seja realizado corretamente e prevenir lesões</p>
-      </div>
-    </div>
-    <div class="accordion">
-      <h2 class="accordion-header"><span>06.</span> Suporte no WhatsApp<i class="fas fa-chevron-down"></i></h2>
-      <div class="accordion-content">
-        <p>
-          Ofereço suporte para esclarecimento de dúvidas 24 horas por dia, através do WhatsApp, durante todo o período
-          do protocolo de treinamento. Estou sempre dísponivel para ajudar e fornecer orientações adicionais sempre que
-          necessário. Sua satisfação e progresso são prioridades, e estou aqui para garantir que você tenha todo o apoio
-          necessário.
-        </p>
-      </div>
-    </div>
+    <nav class="accordion-container passos">
+      <h1 class="title">PASSO A PASSO <span>DA CONSULTORIA</span></h1>
+      <section class="accordion">
+        <h2 class="accordion-header"><span>01.</span> Anamnese<i class="fas fa-chevron-down"></i></h2>
+        <div class="accordion-content">
+          <p>É um questionário de saúde onde é realizado coleta de informações sobre seu histórico de saúde, ergonomia,
+            experiência com exercício físicos, como é sua alimentação, profissão, rotina e objetivos. O mais detalhista
+            possível ajuda na hora do atendimento por videochamada</p>
+        </div>
+      </section>
 
+      <section class="accordion">
+        <h2 class="accordion-header"><span>02.</span> Avaliação Postural<i class="fas fa-chevron-down"></i></h2>
+        <div class="accordion-content">
+          <p>Eu vou te mandar exemplos de como se posicionar corretamente para captura das fotos, para que assim eu
+            possa
+            fazer a avaliação corretamente sem equívocos. É de suma importância o envio das fotos, pois através delas,
+            irei montar o protocolo de treino personalizado, exclusivo para você.</p>
+        </div>
+      </section>
 
-  </div>
-  <div class="acesso">
-    <h1>ACESSO AOS <span>TREINOS</span></h1>
-    <p>O seu treinamento será entregue atrvés de um pdf cuidadosamente desenvolvido por mim. Este documento abrangerá
-      uma introdução detalhada sobre a estratégia do treino, uma períodização datada, divisão de treino, lista de
-      exercícios com séries, repetições, tempo de descanso, além de observações importantes. Adicionalmente você terá
-      acesso a vídeos demonstrativos de cada exercício prescrito. Todo esse material será enviado com a maior comodidade
-      através do WhatsApp, proporcionando praticidade e fácil acesso às informações essenciais para o seu progresso.</p>
-  </div>
+      <section class="accordion">
+        <h2 class="accordion-header"><span>03.</span> Fotos da Academia<i class="fas fa-chevron-down"></i></h2>
+        <div class="accordion-content">
+          <p>Eu irei pedir que você grave ou tire fotos da sua academia e equipamentos para que eu possa avaliar e
+            selecionar os melhores equipamentos para o seu programa de treinamento personalizado. Ao receber suas
+            imagens
+            vou desenvolver tudo de acordo com os equipamentos que tem na sua academia atual</p>
+        </div>
+      </section>
 
-  <div class="redes-sociais">
-    <a href="https://www.facebook.com/CiclistaTioPinguinho" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com/tiopinguinho/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="mailto:ciclistatiopinguinho@yahoo.com.br"><i class="fas fa-envelope"></i></a>
-    <a href="https://wa.me/5551998393149?text=Olá+venho+através+do+seu+site+tio+pinguinho" target="_blank"><i
-        class="fab fa-whatsapp"></i></a>
-  </div>
+      <section class="accordion">
+        <h2 class="accordion-header"><span>04.</span>Vídeo Chamada<i class="fas fa-chevron-down"></i></h2>
+        <div class="accordion-content">
+          <p>Após o envio dos arquivos (etapa 1, 2 e 3), agendaremos uma videochamada para uma consulta personalizada.
+            Durante nossa conversa, irei aprofundar nossa anamnese e discutir as informações fornecidas, incluindo as
+            fotos ou vídeos da sua academia. Isso me permitirá entender melhor suas necessidades e objetivos
+            específicos.
+          </p>
+        </div>
+      </section>
 
-  <div class="caixa-video">
-    <video src="./assets/video.mp4" autoplay muted loop class="video-desktop"></video>
-    <video src="./assets/video-mobile.mp4" autoplay muted loop class="video-mobile"></video>
-    <div class="mascara"></div>
-  </div>
+      <section class="accordion">
+        <h2 class="accordion-header"><span>05.</span>Execução dos Exercícios<i class="fas fa-chevron-down"></i></h2>
+        <div class="accordion-content">
+          <p>Após você receber o protocolo de treinamento personalizado, solicito que envie vídeos executando cada
+            exercício, para que eu possa fazer as correções, mesmo sendo online prezo na execução dos exercícios com
+            uma
+            boa técnica, e garantir que cada um seja realizado corretamente e prevenir lesões</p>
+        </div>
+      </section>
 
-  <form id="formularioFaleConosco" class="formulario-fale-conosco">
-    <input id="nome" placeholder="Seu nome" type="text" name="nome" required>
-    <input id="telefone" placeholder="Seu telefone" type="tel" name="telefone" required>
-    <textarea id="duvida" placeholder="Escreva o que você precisa para orçamento aqui" name="duvida"
-      required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-  <a id="whatsappLink" href="https://wa.me/5551998393149?text=Olá+venho+através+do+seu+site+tio+pinguinho"
-    class="link-whatsapp hidden" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+      <section class="accordion">
+        <h2 class="accordion-header"><span>06.</span> Suporte no WhatsApp<i class="fas fa-chevron-down"></i></h2>
+        <div class="accordion-content">
+          <p>
+            Ofereço suporte para esclarecimento de dúvidas 24 horas por dia, através do WhatsApp, durante todo o
+            período
+            do protocolo de treinamento. Estou sempre disponível para ajudar e fornecer orientações adicionais sempre
+            que
+            necessário. Sua satisfação e progresso são prioridades, e estou aqui para garantir que você tenha todo o
+            apoio
+            necessário.
+          </p>
+        </div>
+      </section>
+
+    </nav>
+
+    <section class="acesso">
+      <h1>ACESSO AOS <span>TREINOS</span></h1>
+      <p>O seu treinamento será entregue através de um PDF cuidadosamente desenvolvido por mim. Este documento abrangerá
+        uma introdução detalhada sobre a estratégia do treino, uma períodização datada, divisão de treino, lista de
+        exercícios com séries, repetições, tempo de descanso, além de observações importantes. Adicionalmente você terá
+        acesso a vídeos demonstrativos de cada exercício prescrito. Todo esse material será enviado com a maior
+        comodidade
+        através do WhatsApp, proporcionando praticidade e fácil acesso às informações essenciais para o seu progresso.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Redes sociais Rodapé -->
+  <footer>
+    <section class="redes-sociais">
+      <a href="https://www.facebook.com/CiclistaTioPinguinho" target="_blank" aria-label="Facebook"><i
+          class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/tiopinguinho/" target="_blank" aria-label="Instagram"><i
+          class="fab fa-instagram"></i></a>
+      <a href="mailto:ciclistatiopinguinho@yahoo.com.br" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/5551998393149?text=Olá+Personal+,+venho+através+do+seu+site+!" target="_blank"
+        aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </section>
+  </footer>
 
   <script src="script.js"></script>
 </body>
