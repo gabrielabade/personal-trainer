@@ -1,3 +1,12 @@
+/* Definição das variáveis de cor */
+:root {
+  --color-primary: #ff9046;
+  --color-secondary: #02131d9d;
+  --color-white: #ffffff;
+  --color-accordion: rgba(3, 21, 57, 0.516);
+}
+
+/* Reset e elementos comuns */
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +18,8 @@
 }
 
 button {
-  color: white;
-  background-color: #ff9046;
+  color: var(--color-white);
+  background-color: var(--color-primary);
   border-radius: 3px;
   border: none;
   width: 12.5rem;
@@ -22,7 +31,7 @@ button {
 }
 
 button:hover {
-  background: #ff9046;
+  background: var(--color-primary);
   transition: background 2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
@@ -37,10 +46,10 @@ body {
   flex-direction: column;
   align-items: safe;
   justify-content: safe;
-  color: white;
+  color: var(--color-white);
   margin-top: 17rem;
   height: 100vh;
-  color: white;
+  color: var(--color-white);
   margin-top: 12rem;
   padding: 15rem 5%;
   margin: 1rem auto;
@@ -51,14 +60,14 @@ body {
 }
 
 .caixa-principal h2 {
-  color: #ff9046;
+  color: var(--color-primary);
 }
 
 .menu-icon {
   display: none;
   font-size: 2rem;
   cursor: pointer;
-  color: white;
+  color: var(--color-white);
 }
 
 .caixa-video {
@@ -91,7 +100,7 @@ video {
 
 .link-whatsapp i {
   font-size: 50px;
-  color: white;
+  color: var(--color-white);
   position: fixed;
   right: 1.25rem;
   bottom: 1.25rem;
@@ -99,7 +108,7 @@ video {
 }
 
 .link-whatsapp i:hover {
-  color: #ff9046;
+  color: var(--color-primary);
 }
 
 header {
@@ -119,7 +128,7 @@ header img {
 }
 
 header a {
-  color: white;
+  color: var(--color-white);
   font-size: 1.5rem;
   cursor: pointer;
   text-decoration: none;
@@ -127,7 +136,7 @@ header a {
 }
 
 header a:hover {
-  color: #ff9046;
+  color: var(--color-primary);
   font-size: 1.8rem;
   transition: color 1s ease-in-out, font-size 1s ease-in-out;
 }
@@ -162,7 +171,7 @@ input {
   border-radius: 0.5rem;
   border: 1px solid gray;
   padding-left: 0.3rem;
-  outline-color: #ff9046;
+  outline-color: var(--color-primary);
 }
 
 textarea {
@@ -171,7 +180,7 @@ textarea {
   border-radius: 0.5rem;
   border: 1px solid gray;
   padding-left: 0.3rem;
-  outline-color: #ff9046;
+  outline-color: var(--color-primary);
 }
 
 .mascara-formulario {
@@ -200,8 +209,8 @@ textarea {
 /* SOBRE.HTML*/
 
 .sobre {
-  color: white;
-  background: #02131d9d;
+  color: var(--color-white);
+  background: var(--color-secondary);
   border-radius: 10px;
   padding: 20px;
   margin: auto;
@@ -223,7 +232,7 @@ textarea {
 }
 
 .sobre span {
-  color: #ff9046;
+  color: var(--color-primary);
 }
 
 
@@ -232,12 +241,12 @@ textarea {
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  color: var(--color-white);
   text-align: start;
 }
 
 .passos span {
-  color: #ff9046;
+  color: var(--color-primary);
 }
 
 .passos p {
@@ -254,7 +263,7 @@ textarea {
 }
 
 .accordion {
-  background-color: #02131d9d;
+  background-color: var(--color-secondary);
   border-radius: 10px;
   cursor: pointer;
   padding: 18px;
@@ -268,7 +277,7 @@ textarea {
 }
 
 .accordion:hover {
-  background-color: rgba(3, 21, 57, 0.516);
+  background-color: var(--color-accordion);
   transition: 1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
@@ -279,7 +288,7 @@ textarea {
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  color: var(--color-white);
 }
 
 .accordion-header i {
@@ -299,7 +308,7 @@ textarea {
 .accordion-content {
   margin-top: 10px;
   padding: 20px;
-  background: rgba(3, 21, 57, 0.516);
+  background: var(--color-accordion);
   border-radius: 10px;
   display: none;
   overflow: hidden;
@@ -314,14 +323,14 @@ textarea {
 }
 
 .accordion-content p {
-  color: white;
+  color: var(--color-white);
   font-size: 1.2rem;
   font-style: oblique;
 }
 
 .acesso {
-  color: white;
-  background: #02131d9d;
+  color: var(--color-white);
+  background: var(--color-secondary);
   border-radius: 10px;
   padding: 20px;
   margin: auto;
@@ -343,7 +352,7 @@ textarea {
 }
 
 .acesso span {
-  color: #ff9046;
+  color: var(--color-primary);
 }
 
 .redes-sociais {
@@ -356,11 +365,11 @@ textarea {
   padding: 25px;
   display: inline-block;
   font-size: 40px;
-  color: white;
+  color: var(--color-white);
 }
 
 .redes-sociais a:hover {
-  color: #ff9046;
+  color: var(--color-primary);
   transition: 1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
@@ -375,7 +384,7 @@ textarea {
 @media (max-width: 769px) {
   .sobre {
     margin-top: 10rem;
-    color: white;
+    color: var(--color-white);
     padding: 20px;
     border-radius: 15px;
   }
@@ -393,12 +402,12 @@ textarea {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: white;
+    color: var(--color-white);
     text-align: start;
   }
 
   .passos span {
-    color: #ff9046;
+    color: var(--color-primary);
   }
 
   .passos p {
@@ -418,7 +427,7 @@ textarea {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #02131d9d;
+    background-color: var(--color-secondary);
     display: flex;
     justify-content: space-around;
     padding: 1px 0;
@@ -428,17 +437,17 @@ textarea {
   .redes-sociais a {
     padding: 7px 7px;
     font-size: 30px;
-    color: white;
+    color: var(--color-white);
   }
 
   .redes-sociais a:hover {
-    color: #ff9046;
+    color: var(--color-primary);
     transition: color 0.3s ease;
   }
 
   .accordion-container {
     padding-bottom: 80px;
-    color: white;
+    color: var(--color-white);
     margin-top: 0;
   }
 
@@ -447,7 +456,7 @@ textarea {
   }
 
   .title {
-    color: #ff9046;
+    color: var(--color-primary);
     margin-left: 1rem;
     font-size: 20px;
     margin-top: 1rem;
@@ -474,7 +483,7 @@ textarea {
     display: block;
     position: absolute;
     width: 100%;
-    background-color: #02131d9d;
+    background-color: var(--color-secondary);
     padding: 1rem;
     top: 0;
     right: 0;
@@ -543,8 +552,8 @@ textarea {
     top: 7rem;
     left: 2rem;
     right: 2rem;
-    background-color: #ff9046;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-white);
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
