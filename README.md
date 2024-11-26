@@ -8,18 +8,18 @@ Este é um projeto de página web desenvolvido para personal trainer, apresentan
 - **Orçamento fácil:** Botões de ação estão disponíveis para facilitar o contato e tirar as dúvidas, com links diretos para o WhatsApp.
 - **Facilidade de navegação:** A página é organizada de forma clara e intuitiva, permitindo que os usuários encontrem facilmente as informações desejadas.
 
- ### Como visualizar
-
-Você pode visualizar a aplicação online [aqui](https://gabrielabade.github.io/personal-trainer)
-
 ### Tecnologias utilizadas
 
 - HTML5
 - CSS3
 - JavaScript
 
+ ### Como visualizar
+
+Você pode visualizar a aplicação online [aqui](https://gabrielabade.github.io/personal-trainer)
+
 <div>
 
-![Preview do projeto](./assets/preview.gif)
+![Preview do projeto](./assets/mockup-personal.png)
 
 </div>
